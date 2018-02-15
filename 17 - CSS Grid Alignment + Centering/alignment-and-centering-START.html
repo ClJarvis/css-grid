@@ -14,7 +14,7 @@
     <div class="itm itm2">2</div>
     <div class="itm itm3">3</div>
     <div class="itm itm4">4</div>
-    <div class="itm itm5">5</div>
+    <div class="itm itm5">test string for width</div>
     <div class="itm itm6">6</div>
     <div class="itm itm7">7</div>
     <div class="itm itm8">8</div>
@@ -71,6 +71,20 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(5, 100px);
+      /* justify-items: center;
+      align-items: center;  short hand it as place-items*/
+      place-items: center center;
+      justify-content: space-between;
+    }
+
+    .itm {
+      background: white;
+    }
+
+    .itm5 {
+      justify-self: center;
+      align-self: center;
     }
   </style>
 </body>
