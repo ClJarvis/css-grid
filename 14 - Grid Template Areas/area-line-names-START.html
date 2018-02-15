@@ -46,7 +46,18 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas:
+        "p   p  p   p  p   p  p  p"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔";
     }
+/* can name the lines then used line name to start or end row columns */
+    .item3 {
+      grid-column: 💩-start / 💩-end;
+      grid-row-end 💩-end;
+    }
+
   </style>
 </body>
 

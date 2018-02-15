@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,8 +20,11 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fit, 150px);
+      border: 10px solid var(--black);
+      /* auto fit with minmax set explict track to fill grid
+ makes it responsive,
+      */
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
   </style>
 </body>
