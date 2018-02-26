@@ -85,7 +85,7 @@ img {
   background: var(--yellow);
   display: block;
   text-decoration: none;
-  padding: 0;
+  padding: 10px;
   text-align: center;
   color: var(--black);
   text-transform: uppercase;
