@@ -81,14 +81,14 @@
         <h2>Featured Taco</h2>
         <p>Slim Profile, easy to hold and loaded with cheese.</p>
         <p>This is the one you have been waiting for</p>
+ection class="gallery">
+      <h2>Instant Grams</h2>
         <button>Learn More →</button>
       </div>
     </section>
 
 
-    <section class="gallery">
-      <h2>Instant Grams</h2>
-      <img src="https://source.unsplash.com/random/201x201" alt="">
+    <s      <img src="https://source.unsplash.com/random/201x201" alt="">
       <img src="https://source.unsplash.com/random/202x202" alt="">
       <img src="https://source.unsplash.com/random/203x203" alt="">
       <img src="https://source.unsplash.com/random/204x204" alt="">
@@ -100,6 +100,19 @@
       <img src="https://source.unsplash.com/random/207x210" alt="">
     </section>
   </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+
+  </script>
 
 </body>
 
